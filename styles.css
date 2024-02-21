@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFB800;
+    
+}
+
+header {
+    background-color: #000000;
+    color: #FFB800;
+    text-align: center;
+    padding: 1em 1;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+nav {
+    background-color: #FFB800;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.signup-button {
+    position:fixed;
+    right: 5px;;
+}
+
+.signup-form {
+    text-align: center;
+}
+
+.logo-container {
+    position: absolute;
+    top: 25px; 
+    max-width: 100px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    flex:1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #FFB800;
+    font-size: 2.2em;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #000000;
+}
+
+p {
+    line-height: 1.6;
+    color: #000000;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Adjusted styles for side-by-side previews using Flexbox */
+.preview-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Stretch items to match the height of the tallest one */
+}
+
+.tools-preview,
+.games-preview,
+.stats-preview {
+    flex: 1; /* Equal flex distribution */
+    max-width: 30%; /* Adjust the maximum width as needed */
+    background-color: #FFB800;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 22px; /* Added margin between previews */
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.tools-preview a,
+.games-preview a,
+.stats-preview a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #FFB800;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #FFB800;
+    color: #000000;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
