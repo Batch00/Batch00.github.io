@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head> 
+<title>Pickage Contact</title>
+
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../pickage_logo.png" alt="Pickage Logo">
+        </div>
+        <h1>Contact</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+            <li><a href="../stats/stats.html">Stats</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+            <li class="signup-button"><a href="../signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <section class="intro">
+            <h2 >Get in touch with us</h2>
+        </section>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3 style="text-align: center; font-size: 1.5em;">Contact Information</h3>
+                <h3 style="text-align: center">Email: info@pickage.com
+                    <br><br>
+                    Phone: 1-800-PICKAGE
+                    <br><br>
+                    Address: 1234 Pickage Ave
+                </h3>
+                
+            </div>
+
+            <div class="contact-form-container">
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="general">Question</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pickage Platform | Contact: <a href="../contact/contact.html">info@pickage.com</a></p>
+    </footer>
+
+</body>
+
+</html>
+
 
