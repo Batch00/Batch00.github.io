@@ -9,18 +9,6 @@ body {
     
 }
 
-.logo-container {
-    position:absolute;
-    top: 22px; 
-    left: 27%;
-    max-width: 100px;
-}
-
-.logo-container img {
-    width: 75px;
-    height: auto;
-}
-
 header {
     background-color: #000000;
     color: #FFB800;
@@ -28,33 +16,6 @@ header {
     padding: 1em 1;
     font-size: 1.5em;
     font-weight: bolder;
-}
-
-nav {
-    background-color: #FFB800;
-    color: #000000;
-    padding: 1em;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.signup-button {
-    position:absolute;
-    right: 5px;
-}
-
-.signup-form {
-    text-align: center;
 }
 
 main {
@@ -86,22 +47,68 @@ p {
     margin-bottom: 40px;
 }
 
-/* Adjusted styles for side-by-side previews using Flexbox */
+/* Navigation bar */
+
+nav {
+    background-color: #FFB800;
+    color: #000000;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Pickage Logo */
+
+.logo-container {
+    position:absolute;
+    top: 22px; 
+    left: 27%;
+    max-width: 100px;
+}
+
+.logo-container img {
+    width: 75px;
+    height: auto;
+}
+
+/* Signup page */
+
+.signup-button {
+    position:absolute;
+    right: 5px;
+}
+
+.signup-form {
+    text-align: center;
+}
+
+/* landing page preview boxes */
+
 .preview-container {
     display: flex;
     justify-content: space-between;
-    align-items: stretch; /* Stretch items to match the height of the tallest one */
+    align-items: stretch; 
 }
 
 .tools-preview,
 .games-preview,
 .stats-preview {
-    flex: 1; /* Equal flex distribution */
-    max-width: 30%; /* Adjust the maximum width as needed */
+    flex: 1; 
+    max-width: 30%; 
     background-color: #FFB800;
     padding: 20px;
     border-radius: 15px;
-    margin-right: 50px; /* Added margin between previews */
+    margin-right: 50px;
     display: inline-block;
     box-sizing: border-box;
     text-align: center;
@@ -121,6 +128,8 @@ p {
     width:fit-content;
 }
 
+/* Blog Page */
+
 .blog-container {
     display: flex;
     justify-content: space-between;
@@ -133,6 +142,8 @@ p {
     background-color: #FFB800; 
     padding: 30px;
 }
+
+/* Contact Page */
 
 .contact-container {
     display: flex;
@@ -148,6 +159,8 @@ p {
     text-align: center
 }
 
+/* Tool Page */
+
 .tool-box {
     background-color: #FFB800;
     padding: 5px;
@@ -156,6 +169,8 @@ p {
     box-sizing: border-box;
     text-align: center
 }
+
+/* Games and Odds Page */
 
 .games-container {
     display: flex;
@@ -172,6 +187,8 @@ p {
     margin-bottom: 50px;
     box-sizing: border-box;
 }
+
+/* Stats Page */
 
 .stat-box {
     background-color: #FFB800;
