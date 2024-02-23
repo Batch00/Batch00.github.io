@@ -9,6 +9,18 @@ body {
     
 }
 
+.logo-container {
+    position:absolute;
+    top: 22px; 
+    left: 27%;
+    max-width: 100px;
+}
+
+.logo-container img {
+    width: 75px;
+    height: auto;
+}
+
 header {
     background-color: #000000;
     color: #FFB800;
@@ -43,18 +55,6 @@ nav ul li {
 
 .signup-form {
     text-align: center;
-}
-
-.logo-container {
-    position: absolute;
-    top: 25px; 
-    left: 450px;
-    max-width: 100px;
-}
-
-.logo-container img {
-    width: 75px;
-    height: auto;
 }
 
 main {
@@ -109,13 +109,16 @@ p {
 
 .tools-preview a,
 .games-preview a,
-.stats-preview a {
+.stats-preview a,
+.learn-preview a {
     display: block;
     text-decoration: none;
     color: #FFB800;
     background-color: #000000;
     border-radius: 5px;
     padding: 10px 20px;
+    margin:auto;
+    width:fit-content;
 }
 
 .blog-container {
@@ -126,8 +129,8 @@ p {
 
 .featured-articles,
 .social-media {
-    width: 45%; /* Adjust the width as needed */
-    background-color: #FFB800; /* Example background color */
+    width: 45%;
+    background-color: #FFB800; 
     padding: 30px;
 }
 
@@ -143,6 +146,52 @@ p {
     padding: 20px;
     color: #000;
     text-align: center
+}
+
+.tool-box {
+    background-color: #FFB800;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game-box {
+    flex: 1;
+    max-width: 23%;
+    background-color: #FFB800;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.stat-box {
+    background-color: #FFB800;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
 }
 
 footer {
